@@ -1,49 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Space Battle</title>
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
 </head>
-<body>
-    <div class="bodyContainer">
 
-        <div class="mainCharacterView left" >
+<body>
+    <div class="mainCharacterView-button">
+        <div class="bodyContainer">
+
+            <div class="mainCharacterView left">
+
                 <div class="nameBox">USS Schwarzenegger</div>
+                <div class="dialogBox">
+                    <div class="dialog">
+                        <p id="plan"></p>
+                    </div>
+                    <div class="avtion">
+                        <button>Attack</button>
+                        <button id="retreat">Retreat</button>
+                    </div>
+                </div>
                 <div class="playerImage"></div>
                 <div class="playerStats">
-
-                Hull : 15 <br>
-                FirePower : 5 <br>
-                Accuracy : .7 <br>
-
-z
-
+                    Hull : 15 <br>
+                    FirePower : 5 <br>
+                    Accuracy : .7 <br>
                 </div>
 
-        </div>
 
+            </div>
 
-        <div class="mainCharacterView right">
-           
-            <div class="nameBox">Enemy</div>
-            <div class="enemyImage"></div>
+            <div id="startDiv">
+                <button id="btn">START</button>
+            </div>
+
+            <div class="mainCharacterView right">
+
+                <div class="nameBox">Enemy</div>
+                <div class="enemyImage"></div>
                 <div class="enemyStats">
                     Hull : 6 <br>
                     FirePower : 3 <br>
                     Accuracy : .6 <br>
-    
-    
+
                 </div>
-            
+
+            </div>
+
+
         </div>
 
 
-    <script src="app.js"></script>
+
+        <div class="instruction">
+
+            <div class="content">
+                <p id="text"> Earth has been attacked by a horde of aliens! You are the captain of the USS
+                    Schwarzenegger, on a
+                    mission to destroy every last alien ship. Battle the aliens as you try to destroy them with your
+                    lasers. There are six alien ships. The aliens' weakness is that they are too logical and attack one
+                    at a time: they will wait to see the outcome of a battle before deploying another alien ship. Your
+                    strength is that you have the initiative and get to attack first. However, you do not have targeting
+                    lasers and can only attack the aliens in order. After you have destroyed a ship, you have the option
+                    to make a hasty retreat.</p>
+
+                <button id="next">Next</button>
+
+            </div>
+
+        </div>
+
+        <div class="finalPopup">
+
+            <div class="content">
+                <p id="endText"> </p>
+                <div class="endButton">
+                    <button id="cancel">Cancel</button>
+                    <button id="endGame">End Game</button>
+                </div>
+            </div>
+
+        </div>
+
+
+
 </body>
+
 </html>
