@@ -1,6 +1,6 @@
-.bodyContainer{
+.bodyContainer {
     display: flex;
-    
+
     justify-content: space-between;
     height: 100vh;
     width: 100vw;
@@ -10,11 +10,13 @@
     background-color: black;
     color: white;
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
 }
-.mainCharacterView-button{
+
+.mainCharacterView-button {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -22,14 +24,15 @@
 
 }
 
-.mainCharacterView{
+.mainCharacterView {
 
-width: 50%;
-display: flex;
-flex-direction: column;
-justify-content: space-around;
-align-items: center;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
+
 /* .left{
 
 }
@@ -37,7 +40,7 @@ align-items: center;
     
 } */
 
-.nameBox{
+.nameBox {
     border: 1px solid black;
     width: 25vw;
     height: 10vh;
@@ -49,20 +52,22 @@ align-items: center;
     box-shadow: 0px 0px 20px 10px white;
 
 }
-.playerImage{
+
+.playerImage {
     border: 1px solidblack;
     width: 30vw;
     height: 40vh;
     background-image: url("/images/space_hero.gif");
-    background-size: cover ;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     box-shadow: 0px 0px 20px 10px white;
-    
 
-    
+
+
 }
-.playerStats{
+
+.playerStats {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -76,20 +81,22 @@ align-items: center;
 
 
 }
-.enemyImage{
+
+.enemyImage {
     border: 1px solidblack;
     width: 30vw;
     height: 35vh;
     background-image: url("/images/enemy.gif");
-    background-size: cover ;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     box-shadow: 0px 0px 20px 10px white;
-    
 
-    
+
+
 }
-.enemyStats{
+
+.enemyStats {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -103,15 +110,15 @@ align-items: center;
 
 }
 
-#startDiv{
+#startDiv {
     display: flex;
     align-items: center;
 }
 
 
-    
 
-#btn{
+
+#btn {
     border: 1px solid white;
     width: 25vw;
     height: 10vh;
@@ -125,20 +132,20 @@ align-items: center;
     /* background-position: center; */
 }
 
-.instruction{
+.instruction {
     /* width: 100%;
     height: 100; */
     margin: 50px 50px 50px 50px;
-    background-color: rgba(0, 0 ,0, 0.7); 
+    background-color: rgba(0, 0, 0, 0.7);
     position: absolute;
     /* display:flex; */
     justify-content: center;
     display: none;
-     
+
 }
 
-.content{
-    display:flex;
+.content {
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
@@ -150,7 +157,7 @@ align-items: center;
 
 }
 
-#next{
+#next {
     margin-top: 20px;
     border: 1px solid rgb(131, 26, 26);
     width: 80px;
@@ -159,30 +166,32 @@ align-items: center;
 
 }
 
-button:hover{
+button:hover {
     cursor: pointer;
 }
 
-.dialogBox{
-    width: fit-content;
-    height:fit-content;
-    border : 5px solid rgb(149, 20, 20);
+.dialogBox {
+    width: 300px;
+    height: 200px;
+    overflow-y: scroll;
+    scrollbar-color: auto;
+    scrollbar-width: auto;
+    border: 5px solid rgb(149, 20, 20);
     border-radius: 5px;
-    background-color: rgba(15, 8, 9, 0.7); 
+    background-color: rgba(15, 8, 9, 0.7);
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
     display: none;
 }
 
-.finalPopup{
+.finalPopup {
     width: fit-content;
     height: fit-content;
     margin: 50px 50px 50px 50px;
-    background-color: rgba(253, 247, 247, 0.7); 
+    background-color: rgba(253, 247, 247, 0.7);
     position: absolute;
     /* display:flex; */
     justify-content: center;
     display: none;
 }
-    
