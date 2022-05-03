@@ -164,7 +164,7 @@ button:hover{
 }
 
 .dialogBox{
-    width:fit-content;
+    width: fit-content;
     height:fit-content;
     border : 5px solid rgb(149, 20, 20);
     border-radius: 5px;
